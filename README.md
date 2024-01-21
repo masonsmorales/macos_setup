@@ -5,6 +5,7 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 xcode-select --install
 brew install git
+brew install git-lfs
 brew install --cask git-credential-manager
 brew install dos2unix
 brew install go
