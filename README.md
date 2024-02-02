@@ -13,6 +13,15 @@ brew install golangci-lin
 brew install jq
 brew install --cask docker
 brew install --cask visual-studio-code
+# Note: The following tools can also just be installed in the devcontainer
+brew install ruff
+brew install pyright
+brew install pylint
+brew install black
+brew install isort
+brew install yamllint
+brew install poetry
+brew install bandit
 ```
 ## GPG Tools
 ```bash
