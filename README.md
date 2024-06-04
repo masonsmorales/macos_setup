@@ -14,6 +14,7 @@ brew install dos2unix
 brew install go
 brew install golangci-lin
 brew install jq
+brew install wget
 brew install kubernetes-cli
 brew install awscli
 brew install postman
