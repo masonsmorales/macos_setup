@@ -1,6 +1,8 @@
 # macos_setup
 - https://brew.sh/
-## Dev Tools
+
+## Software
+### Dev Tools
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew update
@@ -35,16 +37,38 @@ brew install pyenv
 brew install bandit
 pyenv install 3.12.3
 ```
-## GPG Tools
+### GPG Tools
 ```bash
 brew install --cask gpg-suite-no-mail
 brew install pinentry-mac
 echo "pinentry-program $(which pinentry-mac)" >> ~/.gnupg/gpg-agent.conf
 killall gpg-agent
 ```
-## Desktop Software
+### Desktop Software
 ```bash
 brew install --cask zoom
 brew install --cask google-chrome
 brew install --cask brave-browser
+```
+
+## OS Tweaks
+
+### Finder
+Show hidden folders by default
+```bash
+defaults write com.apple.Finder AppleShowAllFiles true
+killall Finder
+```
+
+### Set Screenshot Save Location
+```bash
+mkdir -p ~/Screenshots
+defaults write com.apple.screencapture location ~/Screenshots
+killall SystemUIServer
+```
+
+### Speed Up Mission Control Animations
+```bash
+defaults write com.apple.dock expose-animation-duration -float 0.1
+killall Dock
 ```
