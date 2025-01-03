@@ -1,5 +1,7 @@
 # macos_setup
 - https://brew.sh/
+- https://github.com/masonsmorales/macos_enable_sudo_touch_id
+- 
 
 ## Software
 ### Dev Tools
