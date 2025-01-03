@@ -24,6 +24,7 @@ brew install --cask docker
 brew install --cask visual-studio-code
 brew install --cask slack
 brew install --cask zoom
+brew install --cask warp
 
 # Note: The following tools can also just be installed in the devcontainer
 brew install ruff
